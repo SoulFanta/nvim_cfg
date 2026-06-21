@@ -27,6 +27,12 @@ return {
         },
       })
 
+      cmp.setup({
+        experimental = {
+          ghost_text = true,
+        },
+      })
+
       cmp.setup.cmdline({ "/", "?" }, {
         mapping = cmp.mapping.preset.cmdline(),
         sources = {
