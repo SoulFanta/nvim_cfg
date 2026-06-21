@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
       errors > 0 and vim.log.levels.ERROR or vim.log.levels.WARN,
       {
         title = "Diagnostics",
-        timeout = 3000,
+        timeout = 1000,
       }
     )
   end,

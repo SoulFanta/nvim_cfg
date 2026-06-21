@@ -11,6 +11,7 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+
 local lazy_config = require "configs.lazy"
 
 -- load plugins
@@ -35,3 +36,10 @@ require "configs.commands"
 vim.schedule(function()
   require "mappings"
 end)
+
+
+local old = vim.notify
+vim.notify = function(...)
+  print(debug.traceback("vim.notify wrapper", 2))
+  return old(...)
+end
