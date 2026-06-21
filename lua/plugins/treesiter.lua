@@ -19,6 +19,7 @@ return {
       indent = {
         enable = true,
       },
+     
     },
   },
 }
