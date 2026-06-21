@@ -13,5 +13,8 @@ map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
 
+-- surround
+map("x", "S", "<Plug>(nvim-surround-visual)", { desc = "Surround selection" })
+map("x", "gS", "<Plug>(nvim-surround-visual-line)", { desc = "Surround selection line" })
 
 
