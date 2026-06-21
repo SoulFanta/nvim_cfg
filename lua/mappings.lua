@@ -12,9 +12,11 @@ map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })
 
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
-
--- surround
 map("x", "S", "<Plug>(nvim-surround-visual)", { desc = "Surround selection" })
 map("x", "gS", "<Plug>(nvim-surround-visual-line)", { desc = "Surround selection line" })
 
-
+--map("n", "<leader>dc", "<cmd>Containers<CR>", { desc = "Docker containers" })
+--map("n", "<leader>dl", "<cmd>ContainerLogs<CR>", { desc = "Docker logs" })
+--map("n", "<leader>ds", "<cmd>ContainerShell<CR>", { desc = "Docker shell" })
+--map("n", "<leader>dt", "<cmd>lua require('telescope').extensions.docker.docker()<CR>", { desc = "Docker telescope" })
+--map("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
