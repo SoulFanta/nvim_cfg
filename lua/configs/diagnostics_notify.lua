@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     end
 
     vim.notify(
-      "ERROR: " .. errors .. "\nWARN: " .. warns .. "\n\nВведи :Diag, чтобы открыть список ошибок",
+      "\nERROR: " .. errors .. "\nWARN: " .. warns .. "\n\nВведи :DiagList, чтобы открыть список ошибок",
       errors > 0 and vim.log.levels.ERROR or vim.log.levels.WARN,
       {
         title = "Diagnostics",
